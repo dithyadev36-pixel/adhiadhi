@@ -3,7 +3,7 @@ name: Tokenforrepo
 on: [push]
 
 jobs:
-  api_call:
+  build:
     runs-on: ubuntu-latest
 
     steps:
