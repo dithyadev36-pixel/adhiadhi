@@ -1,0 +1,17 @@
+name: Tokenforrepo
+
+on: [push]
+
+jobs:
+  api_call:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make Token request
+        env:
+          Token_KEY: ${{ secrets.MY_SECRET_KEY }}
+        run: |
+       
